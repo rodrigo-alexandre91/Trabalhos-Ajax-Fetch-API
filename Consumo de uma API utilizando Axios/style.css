@@ -1,0 +1,60 @@
+body{
+    background-color: gray;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    width: max-content;
+    padding: 20px 25px 20px 25px;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img{
+    border-radius: 50%;
+    border: #252525 solid;
+}
+
+button{
+    transition: 0.2s;
+    background-color: #474747;
+    color: white;
+}
+
+button:hover{
+    background-color: #e4e0e0;
+    color: rgb(19, 19, 19);
+    cursor: pointer;
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-top: 6px solid #252525;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 20px;
+    animation: spin 0.8s infinite linear;
+    visibility: hidden;
+}
+
+#loader.display{
+    visibility: visible;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
